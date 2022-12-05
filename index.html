@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- icon link -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Responsive NavigationBar</title>
+</head>
+<body>
+   <div class="container">
+    <header>
+        <div class="logo">
+            Startup.
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Work</a></li>
+            </ul>
+        </nav>
+        <div class="menu"id="menu">
+            <i class="bx bx-menu"></i>
+        </div>
+    </header>
+   </div>
+
+   <!-- javascript -->
+
+   <script>
+var menu=document.getElementById("menu");
+var nav=document.getElementById("nav");
+menu.addEventListener("click",function(){
+    nav.classList.toggle("active")
+})
+   </script>
+</body>
+</html>
